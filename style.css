@@ -1,0 +1,294 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Futura PT Light";
+}
+
+.footer-content-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "footer-content";
+  height: auto;
+  margin: 0 10% 0 15%;
+}
+
+.footer-content {
+  grid-area: footer-content;
+}
+.footer-content .box {
+  display: flex;
+  justify-content: space-around;
+  padding: 4rem;
+  text-align: center;
+}
+.footer-content.box .box__content {
+  font-size: 14px;
+}
+.footer-content .box .box__content i {
+  font-size: 2.5rem;
+}
+.footer-content .box .box__content p {
+  margin-top: 25px;
+  font-size: 28px;
+}
+.footer-content .text-description {
+  display: block;
+  text-align: center;
+}
+.footer-content .text-description h5 {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.footer-content .text-description i {
+  margin-top: 10px;
+  height: 1rem;
+}
+.mailBox {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.text__mailBox {
+  font-size: 16px;
+  text-align: center;
+}
+.mailBox__mail {
+  width: 500px;
+}
+.mailBox__input {
+  padding: 10px 0;
+  display: flex;
+}
+.mailBox__check {
+  display: inline-flex;
+
+  align-items: flex-start;
+  width: 500px;
+}
+.mailBox__check label {
+  font-size: 0.8rem;
+}
+.mailBox__check input {
+  margin-right: 5px;
+}
+#email {
+  height: 2rem;
+  width: 25rem;
+  padding: 10px 5px;
+  font-size: 18px;
+  margin: 0;
+}
+#send {
+  height: 2rem;
+  width: 7rem;
+  background: black;
+  color: #fff;
+  padding: 7px 5px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* ------------------------------------------------------ */
+.menu-container {
+  display: grid;
+  grid-template-columns: 1fr, 1fr, 1fr, 1fr, 0.1fr, 1.4fr, 1.4fr;
+  grid-template-rows: 0.1fr, 0.1fr, 0.1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "category-caption category-caption corporate-caption sss-caption bos bos bos"
+    "menu-category menu-category2 menu-corporate menu-sss hr-yeri bize-ulasin mobile-app"
+    "menu-category menu-category2 menu-corporate menu-sss hr-yeri telefon telefon";
+  height: auto;
+  margin: 1% 10% 1% 15%;
+}
+.category-caption {
+  grid-area: category-caption;
+
+  display: flex;
+  align-items: flex-end;
+  padding: 10px 0 0 0;
+}
+.menu-category {
+  grid-area: menu-category;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  font-weight: 300;
+  padding: 8px 0;
+  display: block;
+}
+h5 {
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  font-size: 18px;
+}
+
+.menu-category2 {
+  grid-area: menu-category2;
+}
+
+.corporate-caption {
+  grid-area: corporate-caption;
+
+  display: flex;
+  align-items: flex-end;
+  padding: 10px 0 0 0;
+}
+
+.menu-corporate {
+  grid-area: menu-corporate;
+}
+
+.sss-caption {
+  grid-area: sss-caption;
+  display: flex;
+  align-items: flex-end;
+  padding: 10px 0 0 0;
+}
+
+.menu-sss {
+  grid-area: menu-sss;
+}
+/* ------------------------------------------------------ */
+.hr-yeri {
+  grid-area: hr-yeri;
+}
+.dikey {
+  border: 0;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  height: 20rem;
+}
+
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+/* ------------------------------------------------------ */
+.bize-ulasin {
+  grid-area: bize-ulasin;
+  text-align: center;
+  padding: 20px 0 0 0;
+}
+.bize-ulasin h3 {
+  font-weight: 800;
+  font-size: 20px;
+}
+.bize-ulasin .sosyal-medya {
+  list-style-type: none;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.bize-ulasin .sosyal-medya li {
+  width: 35px;
+  height: 35px;
+  border: 1px solid black;
+  color: black;
+  border-radius: 50%;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 8px;
+}
+.bize-ulasin .sosyal-medya li a {
+  color: #000;
+}
+/* ------------------------------------------------------ */
+.mobile-app {
+  grid-area: mobile-app;
+  text-align: center;
+  padding: 20px 0 0 0;
+}
+.mobile-app h3 {
+  font-weight: 800;
+  font-size: 20px;
+}
+.mobile-app .app {
+  list-style-type: none;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.mobile-app .app li {
+  margin-right: 8px;
+}
+.mobile-app .app li a img {
+  width: 6rem;
+  height: 2rem;
+}
+
+.telefon {
+  grid-area: telefon;
+  text-align: center;
+}
+.telefon h3 {
+  font-weight: 800;
+  font-size: 20px;
+}
+.telefon i {
+  margin-top: 10px;
+  font-size: 3rem;
+}
+
+.bos {
+  grid-area: bos;
+}
+
+/* ------------------------------------------------------ */
+.gizlilik-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.1fr;
+  gap: 0px 0px;
+  grid-template-areas: "gizlilik";
+  height: auto;
+  margin: 0 10% 0 15%;
+}
+
+.gizlilik {
+  grid-area: gizlilik;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin-right: 20px;
+}
+.gizlilik p {
+  margin-right: 4rem;
+  font-size: 12px;
+}
+
+/* ------------------------------------------------------ */
+.bank-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.1fr;
+  gap: 0px 0px;
+  grid-template-areas: "bank-icons";
+  height: auto;
+  margin: 0 10% 0 15%;
+}
+.bank-icons {
+  grid-area: bank-icons;
+  display: flex;
+  justify-content: start;
+  padding: 10px;
+  margin-right: 20px;
+}
+.bank-icons img {
+  margin-right: 10px;
+  height: 20px;
+}
